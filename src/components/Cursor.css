@@ -1,0 +1,26 @@
+
+
+.ring{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    -webkit-transition-duration: 100ms;
+    transition-duration: 100ms;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    will-change: width, height, transform, border;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.ring.hovered{
+    width: 40px;
+    height: 40px;
+    border-width: 3px;
+    background-color:rgba(0, 0, 0, 0.493);
+}
